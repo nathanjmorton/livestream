@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+    <title>Ralph Retort</title>
+  </head>
+  <body>
+    <video
+      id="my-video"
+      class="video-js"
+      controls
+      preload="auto"
+      width="640"
+      height="264"
+      poster="MY_VIDEO_POSTER.jpg"
+      data-setup="{'aspectRatio': '16:9', 'playbackRates': [0.5, 1, 1.5, 2]}"
+    >
+      <source
+        src="http://104.131.36.252:8080/hls/livestream.m3u8"
+        type="application/x-mpegURL"
+        res="9999"
+        label="auto"
+      />
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank"
+          >supports HTML5 video</a
+        >
+      </p>
+    </video>
+
+    <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+  </body>
+</html>
